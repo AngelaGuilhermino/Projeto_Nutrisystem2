@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Troca de Senha - Nutri System</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/novasenha.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="../pagina_inicial.html">Nutri System</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="telalogin">
+            <form>
+                <h1>
+                    Trocar senha
+                </h1>
+                <div>
+                    <label>Nova Senha: </label> <br>
+                    <input type="password" name="senha" class="validacao" oninput="validaTamanho()">
+                </div>
+                <div>
+                    <span class="mensagem">A senha deve ter no mínimo 8 dígitos</span>
+                </div>
+                <div>
+                    <label>Confirme sua Senha: </label> <br>
+                    <input type="password" name="senha" class="validacao" oninput="validaSenha()">
+                </div>
+                <div>
+                    <span class="mensagem">Senhas devem ser conpatíveis</span>
+                </div>
+                <div onclick="trocada()">
+                    <input type="button" value="Enviar" name="enviar">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="../script/validasenha.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+nav{
+    padding: 0;
+}
+
+.title {
+    font-size: clamp(6rem, 5vw, 110px);
+}
+
+.menu a {
+    font-size: clamp(1rem, 2vw, 20px);
+    font-weight: 300;
+    color: #000;
+  }
+
+h1 {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+div#conteudo{
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+p, ul {
+    margin-bottom: 20px;
+}
+
+.exercise-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.section {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2, h3 {
+    color: #333;
+}
+
+h4{
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+.exercises,
+.phases,
+.rest {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.exercise-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.phase {
+    margin-bottom: 15px;
+}
+
+.exercise-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.exercise-table th, .exercise-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+.exercise-table th {
+    background-color: #f0f0f0;
+}

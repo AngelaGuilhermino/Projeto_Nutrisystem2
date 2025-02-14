@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italianno&family=Jost:ital,wght@0,100..900;1,100..900&family=Passion+One:wght@400;700;900&family=Press+Start+2P&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sriracha&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "jost", Arial, Helvetica, sans-serif;
+}
+
+header {
+    font-family: "inter", Arial, Helvetica, sans-serif;
+
+    .logo {
+        font-family: "italianno", cursive;
+        color: #121112;
+        font-size: 4rem;
+        text-align: center;
+        display: block;
+    }
+
+    .menu-res {
+        width: 10px;
+    }
+
+    .nav-lista {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0;
+        list-style: none;
+    }
+
+    ul>li {
+        display: inline-block;
+        padding: 10px 5px;
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+@keyframes aumentando {
+    0%{
+        transform: scale(1);
+    }
+    
+    100%{
+        transform: scale(1.25);
+    }
+}
+
+main {
+
+    section#sec1 {
+        background-image: url("../img/fundo.png");
+        background-position: top center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 200vh;
+
+        .telatoda{
+            height: 88vh;
+            display: flex;
+            justify-content: center;
+            align-content: flex-start;
+        }
+
+        .telatoda2{
+            align-content: flex-end;
+        }
+
+        h1 {
+            color: rgb(255, 255, 255);
+            font-size: 4.75vw;
+            text-shadow: 1px 1px 2px black;
+            text-align: center;
+        }
+
+        h2 {
+            font-weight: 400;
+            padding: 20px;
+            background-color: white;
+        }
+
+        div.info {
+            display: grid;
+            grid-template-columns: 33.3333% 33.3333% 33.3333%;
+            background-color: white;
+
+            @media screen and (max-width: 700px) {
+                grid-template-columns: 50% 50%;
+
+            }
+
+            div {
+                padding: 4px;
+                margin: 20px 0px;
+            }
+
+            h3 {
+                font-weight: 300;
+                text-transform: uppercase;
+            }
+
+            p {
+                font-weight: 300;
+            }
+        }
+    }
+
+    section#sec2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 60px;
+        text-align: center;
+        padding: 30px;
+        height: 100vh;
+
+        div {
+            margin: 0px auto;
+            padding: 20px 10px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        
+        img,
+        p {
+            font-size: 150%;
+            font-weight: 300;
+            width: 100%;
+            margin: 5px auto;
+        }
+    }
+
+    section#sec3 {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: 20%;
+        div#fundo4 {
+            background-image: url("../img/potes.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 190px;
+            align-content: flex-start;
+        }
+
+        #parte2{
+            align-content: center;
+        }
+
+        h3 {
+            margin-top: 40px;
+            margin-bottom: 50px;
+            text-align: center;
+            font-weight: 300;
+            font-size: 60px;
+        }
+    }
+
+    div#par {
+        p {
+            text-align: center;
+            font-weight: 300;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+    div#par2 {
+        p {
+            text-align: center;
+            font-weight: 300;
+            font-size: 20px;
+            margin-bottom: 80px;
+        }
+    }
+
+    div#par3 {
+        p {
+            text-align: center;
+            font-weight: 300;
+            font-size: 40px;
+            font-weight: bold;
+            margin-left: 2px;
+            margin-right: 20px;
+        }
+    }
+
+    div#par4 {
+        p {
+            text-align: center;
+            font-weight: 300;
+            font-size: 60px;
+            font-family: "italianno", cursive;
+        }
+    }
+
+    .flex {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .flex:hover{
+        animation: aumentando 1s alternate forwards;
+    }
+
+    hr{
+        border: 3px solid #CFC13D;
+        max-width: 444px;
+        margin: 0px auto 100px;
+    }
+
+}
+
+footer{
+    height: 450px;
+    margin-top: 200px;
+
+    div#redes{
+        height: 300px;
+        background-image: url(../img/Rectangle\ 2.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        div{
+            width: 150px;
+            height: 150px;
+            background-color: #D9D9D9;
+            border-radius: 100px;
+            filter: drop-shadow(0px 0px 4px #000000a6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img{
+                filter: drop-shadow(0px 0px 4px #0000009c);
+            }
+        }
+    }
+    div#footer_logo{
+        height: 150px;
+        display: flex;
+        align-items: last baseline;
+        justify-content: center;
+
+        p{
+            margin-bottom: 40px;
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 0.9s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0%);
+    transition: all 0.9s;
+}
+
+
+#sec2:nth-child(2){
+    transition-delay: 400ms;
+}
+
+#sec2:nth-child(3){
+    transition-delay: 700ms;
+}
+
+@media screen and (min-width: 2000px) {
+    a.logo{
+        font-size: 8rem;
+        padding: 20px 0px 0px 5px;
+    }
+    
+    a{
+        font-size: 1.8rem;
+    }
+    
+    main{
+        h2{
+            font-size: 2.5rem;
+        }
+        h3{
+            font-size: 2rem;
+        }
+
+        section#sec2, section#sec3 {
+            p{
+                font-size: 2rem;
+            }
+
+            div#par3 {
+                p {
+                    text-align: center;
+                    font-weight: 300;
+                    font-size: 4rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main{
+        section#sec1 {
+            .telatoda{
+                align-items: self-start;
+                h1{
+                    font-size: 2em;
+                }
+            }
+        }
+
+        section#sec2 {
+            grid-template-columns: 1fr;
+            height: auto;
+            
+            p {
+                font-size: 2rem;
+            }
+        }
+
+        section#sec3 {
+            height: auto;
+        
+            h3 {
+                font-size: 40px;
+            }
+
+            div#par3 {
+                p {
+                    text-align: center;
+                    font-weight: 300;
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin-left: 2px;
+                }
+            }
+        
+            div#par4 {
+                p {
+                    text-align: center;
+                    font-weight: 300;
+                    font-size: 30px;
+                    font-family: "italianno", cursive;
+                }
+            }
+        }
+    }
+
+    footer{
+        margin-top: 30px;
+        div#redes{
+            div{
+                width: 100px;
+                height: 100px;
+
+                a{
+                    display: flex;
+                    justify-content: center;
+                }
+
+                img{
+                    width: 70%;
+                }
+            }
+        }
+    }
+
+    .hidden{
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateX(0%);
+    }
+}

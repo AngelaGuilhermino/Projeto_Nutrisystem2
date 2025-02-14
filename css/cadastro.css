@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italianno&family=Jost:ital,wght@0,100..900;1,100..900&family=Passion+One:wght@400;700;900&family=Press+Start+2P&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sriracha&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-family: "inter", Arial, Helvetica, sans-serif;
+    min-height: 13.4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+        font-family: "italianno", cursive;
+        color: #121112;
+        font-size: 4em;
+        text-align: center;
+        display: block;
+    }
+
+    .menu-res {
+        width: 10px;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+main{
+    width: 100vw;
+    min-height: 86.6vh;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family:  "jost", Arial, Helvetica, sans-serif;
+    background-image: url(../img/kuay-jab-cup-with-pork-meatball-pork-cracker.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 10px;
+}
+
+.telalogin{
+    width: 45vw;
+    border: 1px solid black;
+    padding: 20px;
+    box-shadow: 0 0 20px black;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.titulo{
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-size: 2em;
+}
+
+.divisoria{
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+
+.divisoria > div > div > *{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.divisoria div{
+    margin: 5px 0px;
+}
+
+@media screen and (max-width: 880px) {
+
+    .telalogin{
+        width: 60vw;
+    }
+
+    .divisoria{
+      display: block;
+    }
+
+    input{
+        width: 90%;
+    }
+
+    select{
+        width: 90%;
+    }
+  }
+
+  @media screen and (min-width: 2000px) {
+    main{
+        *{
+            font-size: 1.1em;
+        }
+    }
+  }
+
+section{
+    margin: 10px 0px;
+}
+
+section > label{
+    display: block;
+}
+
+.tel>label, .tel>input{
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+label{
+    padding-bottom: 20px;
+}
+
+.sexo{
+    display: flex;
+    justify-content: space-around;
+    
+    input{
+        width: auto;
+    }
+}
+
+.peso_altura{
+display: flex;
+
+    input{
+        width: 5em;
+    }
+}
+
+.text{
+    margin: 0px 0px 0px 15px;
+}
+
+.caixa_botao{
+    width: 30%;
+    margin: 20px auto;
+}
+
+.botao{
+    width: 100%;
+    line-height: 50px;
+    text-align: center; 
+    padding: 5px;
+    cursor: pointer;
+}
+
+.mensagem{
+    color: #e63636;
+    margin: 3px 0px 0px 1px;
+    display: none;
+}

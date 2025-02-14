@@ -1,0 +1,637 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Jaldi:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jaldi:wght@400;700&family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=Palanquin+Dark:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italianno&family=Jaldi:wght@400;700&display=swap');
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #faeded;
+}
+
+.secao1 {
+  width: 100%;
+  height: 898px;
+  position: relative;
+  background-color: #faeded;
+  min-height: 100vh;
+  
+}
+
+.titulo {
+  width: 469px;
+}
+
+.logo {
+  width: 396px;
+  height: 91px;
+  top: 0px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
+  color: #121112;
+  font-size: 100px;
+  font-family: Italianno;
+  font-weight: 400;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 100px;
+  z-index: 10;
+  padding: 1rem 0px;
+}
+
+.menu a {
+  font-size: clamp(1rem, 2vw, 29px);
+  font-family: "Inter";
+  font-weight: 300;
+  color: #000;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  float: left;
+  position: relative;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.opcao-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 360px;
+  z-index: 1;
+}
+
+.opcao-content a {
+  display: block;
+  padding: 2.5px 5px;
+  text-decoration: none;
+  color: #333;
+  font-size: clamp(0.2rem, 1.3vw, 29px);
+}
+
+.dropdown-content a:hover {
+  background-color: #2c4b4687;
+  font-weight: 500;
+}
+
+.opcao-content a:hover {
+  background-color: #2c4b4687;
+  font-weight: 500;
+}
+
+.menu ul li:hover .opcao-content {
+  display: block;
+}
+
+.menu ul li:hover .dropdown-content {
+  display: block;
+}
+
+.text {
+  position: absolute;
+  color: #ce0544;
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: 400;
+  font-family: "Jost";
+  top: 9.688rem;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+.calculadora {
+  width: 80%;
+  max-width: 37.5rem;
+  margin: 1.25rem auto;
+  padding: 1.25rem;
+  text-align: center;
+  align-items: center;
+  background-color: #FFF;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(205, 3, 84, 0.959);
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,0);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  margin-bottom: 35px;
+  color: #000;
+  font-family: "DM Sans";
+  font-size: 2.625rem;
+  font-weight: 800;
+}
+
+label {
+  display: block;
+  margin: 20px 0 15px 0;
+  color: #555;
+  font-family: "Julius Sans One";
+  font-size: 25px;
+  line-height: normal;
+  font-weight: 400;
+}
+
+input {
+  width: 80%;
+  height: 30px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 30px;
+  font-family: "DM Sans";
+  font-weight: 200;
+}
+
+button {
+  background-color: #CE0544;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 28px auto;
+  padding: 9px 45px 9px 45px;
+  border-radius: 10px;
+  width: 200px;
+  height: 60px;
+}
+
+#calcular {
+  color: #FFF;
+  font-family: "Jost";
+  font-size: 30px;
+  font-weight: 700;
+}
+
+button:hover {
+  background-color: #BE2355;
+}
+
+#resultado {
+  margin-bottom: 60px;
+  font-family: "DM Sans";
+  font-size: 30px;
+  font-weight: 800;
+  color: #000;
+}
+
+.fundo {
+  width: 100%;
+  height: 287px;
+  position: absolute;
+  top: 636px;
+  object-fit: cover;
+  background-image: url(../paginas/img_pags/fundo_5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.secao2 {
+  width: 100%;
+  height: auto;
+  background-color: #184524;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+
+}
+
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+
+}
+
+.colorColuna {
+  background-color: #F1E2E5;
+  padding: 9px;
+  border: 2px solid #CBB4BA;
+}
+
+.tituloColuna {
+  color: #000;
+  font-family: "DM Sans";
+  font-size: 30px;
+  font-weight: 500;
+  background-color: #F1E2E5;
+  padding: 1%;
+  border: 2px solid #CBB4BA;
+}
+
+.linhas {
+  background-color: #FFF;
+  color: #000;
+  font-family: "DM Sans";
+  font-size: 27px;
+  font-weight: 200;
+  padding: 0.9%;
+  border-left: 2px solid #CBB4BA;
+  border-right: 2px solid #CBB4BA;
+}
+
+.apColor {
+  background-color: #02A22D;
+  border-right: 2px solid #02A22D;
+  border-bottom: 2px solid #02A22D;
+  border-left: 2px solid #02A22D;
+  padding: 7px;
+}
+
+.AP {
+  border-bottom: 2px solid #02A22D;
+}
+
+.apImc {
+  border-bottom: 2px solid #02A22D;
+}
+
+.apCom {
+  border-bottom: 2px solid #02A22D;
+}
+
+.euColor {
+  background-color: #02A22D;
+  border-right: 2px solid #02A22D;
+  border-bottom: 2px solid #02A22D;
+  border-left: 2px solid #02A22D;
+  padding: 7px;
+}
+
+.EU {
+  border-bottom: 2px solid #02A22D;
+}
+
+.euIMC {
+  border-bottom: 2px solid #02A22D;
+}
+
+.euCom {
+  border-bottom: 2px solid #02A22D;
+}
+
+.sobColor {
+  background-color: #FCA442;
+  border-right: 2px solid #FCA442;
+  border-bottom: 2px solid #FCA442;
+  border-left: 2px solid #FCA442;
+  padding: 7px;
+}
+
+.SOB {
+  border-bottom: 2px solid #FCA442;
+}
+
+.sobImc {
+  border-bottom: 2px solid #FCA442;
+}
+
+.sobCom {
+  border-bottom: 2px solid #FCA442;
+}
+
+.obColor {
+  background-color: #CE0544;
+  border-right: 2px solid #CE0544;
+  border-bottom: 2px solid #CE0544;
+  border-left: 2px solid #CE0544;
+  padding: 7px;
+}
+
+.OB {
+  border-bottom: 2px solid #CE0544;
+}
+
+.obImc {
+  border-bottom: 2px solid #CE0544;
+}
+
+.obCom {
+  border-bottom: 2px solid #CE0544;
+}
+
+.secao3 {
+  width: 100%;
+  height: auto;
+  background-color: #CE0544;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+}
+
+.tabTitulo {
+  color: #000;
+  font-family: "DM Sans";
+  font-size: 30px;
+  font-weight: 500;
+  border: 2px solid #FFCB91;
+  background: #FC8805;
+  padding: 0.9%;
+}
+
+.valTabela {
+  color: #000;
+  font-family: "DM Sans";
+  font-size: 30px;
+  font-weight: 200;
+  border: 2px solid #FFCB91;
+  background: #FFF;
+  padding: 0.9%;
+}
+
+.secao3 p {
+  color: #FFF;
+  font-family: "DM Sans";
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+/* Ajustes para tabletes */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .secao1 {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+
+  }
+
+  .apresent {
+    display: none;
+
+  }
+
+  .calcContainer {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  input {
+    width: 80%;
+  }
+
+  button {
+    width: 55%;
+  }
+
+  label {
+    font-size: 27px;
+  }
+
+  #resultado {
+    margin-bottom: 20px;
+  }
+
+  .secao3 p {
+    font-size: 21px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+    margin-bottom: none;
+  }
+
+
+}
+
+@media screen and (min-width: 1908px) and (max-width: 1910px) {
+  .secao1 {
+    height: 59.75rem;
+    /* Ajusta a altura para o tamanho da tela */
+
+  }
+
+  .logo {
+    width: 30rem;
+    height: 5.688rem;
+    font-size: 7rem;
+    text-align: center;
+
+  }
+
+  .titulo {
+    margin-left: 9rem;
+    margin-right: 9rem;
+  }
+
+  .text {
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+
+  .titulo img {
+    left: 100%;
+    margin-top: 4%;
+  }
+
+  .calculadora {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 2.5rem;
+  }
+
+  nav {
+    top: 7.5rem;
+  }
+
+
+  .fundo {
+    top: 707px;
+  }
+
+
+  .menu {
+    justify-content: center;
+  }
+
+  .menu a {
+    font-size: 2.5rem;
+  }
+}
+
+
+
+/* Ajustes para celulares (largura menor que 768px) */
+@media (max-width: 767px) {
+  .secao1 {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  input {
+    width: 84%;
+    font-size: 18px;
+  }
+
+  button {
+    width: 45%;
+    padding: 10px;
+  }
+
+  #calcular {
+    font-size: 25px;
+  }
+
+  h1 {
+    font-size: 27px;
+  }
+
+  label {
+    font-size: 19px;
+  }
+
+  #resultado {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+
+  }
+
+  .colorColuna {
+    background-color: #F1E2E5;
+    border: 2px solid #CBB4BA;
+  }
+
+  .tituloColuna {
+    font-size: 15px;
+  }
+
+  .linhas {
+    font-size: 15px;
+  }
+
+
+  .secao3 {
+    padding-top: 10%;
+
+  }
+
+  .tabTitulo {
+    font-size: 18px;
+    padding: 0.5%;
+  }
+
+  .valTabela {
+    font-size: 18px;
+  }
+
+  .secao3 p {
+    font-size: 20px;
+    margin: 12%;
+    margin-bottom: none;
+  }
+
+  .secao2,
+  .secao3 {
+    width: 100%;
+    padding-left: 3.7%;
+    padding-right: 3.7%;
+  }
+
+
+  @media (max-width: 360px) {
+    
+
+    .logo {
+      width: 20rem;
+      height: 5.688rem;
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    .titulo {
+      left: 0.2rem;
+
+    }
+
+    .titulo img {
+      left: 55%;
+      width: 20px;
+      height: 35px;
+    }
+
+    nav {
+      width: 100%;
+      padding: 0rem;
+    }
+
+    .menu a {
+      text-align: center;
+      font-size: 1rem;
+    }
+    .text {
+      font-size: 1.5rem;
+      top: 13rem;
+      text-align: center;
+      left: 2.5%;
+      right: 2.5%;
+    }
+
+    .calculadora {
+      width: 70%;
+      margin: 3rem auto;
+      padding: 1.25rem;
+      left: 1%;
+      right: 1%;
+    }
+
+    .secao2,
+  .secao3 {
+    width: 100%;
+    padding-left: 2.9%;
+    padding-right: 2.9%;
+  }
+
+  }
+
+
+}
+
+@media (max-width: 1240px) {
+  .text {
+    font-size: 2rem;
+    
+  }
+}
+
+@media (max-width: 530px) {
+  .text {
+    font-size: 1.5rem;
+    
+  }
+}

@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Jaldi:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jaldi:wght@400;700&family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=Palanquin+Dark:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italianno&family=Jaldi:wght@400;700&display=swap');
+
+.secao1 {
+    width: 100%;
+    height: 898px;
+    position: relative;
+    background-color: #FFF;
+}
+
+.titulo {
+    width: 469px;
+    top: 11px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.titulo img {
+    width: 60px;
+    height: 73.68px;
+    left: 409px;
+    top: 17px;
+    position: absolute;
+}
+
+.logo {
+    width: 396px;
+    height: 91px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    color: #121112;
+    font-size: 100px;
+    font-family: Italianno;
+    font-weight: 400;
+}
+
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top:100px;
+    z-index: 10;
+    padding: 1rem 0px;
+  }
+  
+  .menu a {
+    font-size: clamp(1rem, 2vw, 29px);
+    font-family: "Inter";
+    font-weight: 300;
+    color: #000;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu ul li {
+    float: left;
+    position: relative;
+  }
+  
+  .menu ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 16.25rem;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: clamp(0.4rem, 1.5vw, 29px);
+  }
+  
+  .opcao-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 360px;
+    z-index: 1;
+  }
+  
+  .opcao-content a {
+    display: block;
+    padding: 2.5px 5px;
+    text-decoration: none;
+    color: #333;
+    font-size: clamp(0.2rem, 1.3vw, 29px);
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #2c4b4687;
+    font-weight: 500;
+  }
+  
+  .opcao-content a:hover {
+    background-color: #2c4b4687;
+    font-weight: 500;
+  }
+  
+  .menu ul li:hover .opcao-content {
+    display: block;
+  }
+  
+  .menu ul li:hover .dropdown-content {
+    display: block;
+  }
+
+.text {
+    position: absolute;
+    color: #000;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 400;
+    font-family: "Jost";
+    top: 9.375rem;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.calculadora {
+    width: 38.75rem;
+    height: 33.5rem;
+    position: absolute;
+    background-color: #CFCD88;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    top: 19.5rem;
+    left: 50%;
+    transform: translate(-50%,0);
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+h1 {
+    margin-top: 2.375rem;
+    margin-bottom: 10px;
+    color: #000;
+    font-family: "DM Sans";
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+label {
+    display: block;
+    margin: 20px 0 15px 0;
+    color: #333;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Julius Sans One";
+    font-size: 23px;
+    font-weight: 400;
+}
+
+input {
+   height: 30px;
+   width: 90%;
+}
+
+select {
+    height: 55px;
+    width: 93%;
+}
+
+select,
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #EFF0ED;
+    background: rgba(217, 217, 217, 0.00);
+    font-size: 25px;
+    margin-top: 15px;
+    color: #000;
+    font-family: "DM Sans";
+    font-weight: 200;
+}
+
+option {
+   font-size: 16px; 
+}
+
+button {
+    background-color: #F3E4C8;
+    color: #C79464;
+    border: none;
+    padding: 9px 45px 9px 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 23px;
+    margin: 10px 0;
+    width: 40%;
+    height: 50px;
+}
+
+#calcular {
+    font-family: "Jost";
+    font-weight: 700;
+  }
+
+button:hover {
+    background-color: #C79464;
+    color: #FFF;
+}
+
+#resultado {
+    margin-top: 15px;
+    font-size: 23px;
+    font-weight: bold;
+    color: #333;
+    font-family: "Jost";
+    
+}
+
+.fundo {
+    top: 636px;
+    position: absolute;
+    width: 100%;
+    height: 287px;
+    object-fit: cover;
+    background-image: url(../paginas/img_pags/fundo_4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

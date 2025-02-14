@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+  <title>Calculadora de IMC</title>
+  <link rel="stylesheet" href="../css/imc.css">
+</head>
+
+<body>
+  <div class="secao1">
+    <div class="fundo"></div>
+
+    <div class="titulo">
+      <div class="logo">Nutri System</div>
+    </div>
+    <nav class="menu">
+      <ul>
+        <li><a href="../pagina_inicial.html">Início</a></li>
+        <li class="dropdown">
+          <a href="">Calculadoras</a>
+          <div class="opcao-content">
+            <a href="../paginas/imc.html">IMC</a>
+            <a href="../paginas/Calorias.html">KCAL</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="../paginas/pagina_de_treinos.html">Treinos</a>
+          <div class="opcao-content">
+            <a href="#">Treino de Força</a>
+            <a href="#">Treino de Resistência Muscular</a>
+            <a href="#">Treino de Potência</a>
+            <a href="#">Treino Funcional</a>
+            <a href="#">Treino de Definição</a>
+            <a href="#">Treino de Reabilitação</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="../paginas/pagina_de_dietas.html">Dietas</a>
+          <div class="opcao-content">
+            <a href="#">Dieta Hipocalórica</a>
+            <a href="#">Dieta Hipercalórica Com Alta Proteína</a>
+            <a href="#">Dieta DASH ou Mediterrânea</a>
+            <a href="#">Dieta Equilibrada Para Atletas</a>
+            <a href="#">Dieta Anti-inflamatória</a>
+            <a href="#">Dieta Vegetariana Balanceada</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="../paginas/pagina_de_receitas.html">Receitas</a>
+          <div class="opcao-content">
+            <a href="#">café da Manhã</a>
+            <a href="#">Almoço</a>
+            <a href="#">Janta</a>
+            <a href="#">Entradas e Saladas</a>
+            <a href="#">Sobremesas e Lanches</a>
+            <a href="#">Bebidas</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="../paginas/pagina_de_desafios.html">Desafios</a>
+          <div class="opcao-content">
+            <a href="#">Crescendo Forte: Desafio de 8 Semanas</a>
+            <a href="#">Destruidor de gordura de 12 semanas: Treino e dieta para perda de gordura</a>
+            <a href="#">Desafio Max 4 Dias – Ganho de Massa</a>
+            <a href="#">Ganhe Massa Muscular em 20 semanas</a>
+            <a href="#">Treino HIIT de 20 minutos que você pode fazer em qualquer lugar</a>
+            <a href="#">Desafio Bodybuilder</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="text">
+      <p>Descubra se você está no peso ideal</p>
+    </div>
+
+    <div class="calculadora">
+
+      <h1>Calculadora de IMC</h1>
+
+      <form id="imcForm">
+        <label for="altura">Altura (em metros):</label>
+        <input type="number" id="altura" step="0.01" placeholder="Ex.: 1.75" required>
+
+        <label for="peso">Peso (em kg):</label>
+        <input type="number" id="peso" step="0.1" placeholder="Ex.: 70" required>
+
+        <button type="button" id="calcular">Calcular</button>
+      </form>
+      <div id="resultado"></div>
+    </div>
+
+    <script src="../script/imc.js"></script>
+
+  </div>
+  </div>
+  <div class="secao2">
+    <table>
+      <tr class="table">
+        <th class="colorColuna"></th>
+        <th class="tituloColuna">Classificação</th>
+        <th class="tituloColuna">IMC(kg/m²)</th>
+        <th class="tituloColuna">Riscos de comorbidades</th>
+      </tr>
+      <tr>
+        <th class="apColor linhas"></th>
+        <th class="AP  linhas">Abaixo do Peso</th>
+        <th class="apImc linhas">
+          < 18.50 </th>
+        <th class="apCom linhas">Baixo</th>
+      </tr>
+      <tr>
+        <th class="euColor"></th>
+        <th class="EU linhas">Eutrófico</th>
+        <th class="euIMC linhas">
+          < 18.50 </th>
+        <th class="euCom linhas">Médio</th>
+      </tr>
+      <tr>
+        <th class="sobColor"></th>
+        <th class="SOB linhas">Sobrepeso</th>
+        <th class="sobImc linhas">
+          25.00 - 29.99
+        </th>
+        <th class="sobCom linhas">Pouco elevado</th>
+      </tr>
+      <tr>
+        <th class="obColor"></th>
+        <th class="OB linhas">Obesidade grau I</th>
+        <th class="obImc linhas">
+          30.00 - 34.99
+        </th>
+        <th class="obCom linhas">Elevado</th>
+      </tr>
+      <tr>
+        <th class="obColor"></th>
+        <th class="OB linhas">Obesidade grau II</th>
+        <th class="obImc linhas">
+          35.00 - 39.99
+        </th>
+        <th class="obCom linhas">Muito elevado</th>
+      </tr>
+      <tr>
+        <th class="obColor"></th>
+        <th class="OB linhas">Obesidade grau III</th>
+        <th class="obImc linhas">
+          ≥40.00
+        </th>
+        <th class="obCom linhas">Muitíssimo elevado</th>
+      </tr>
+    </table>
+  </div>
+  <div class="secao3">
+    <table>
+      <tr>
+        <th class="tabTitulo">Circunferência da cintura</th>
+        <th class="tabTitulo">Sexo</th>
+      </tr>
+      <tr>
+        <th class="valTabela">
+          > 80.0 cm
+        </th>
+        <th class="valTabela">
+          Para Mulheres
+        </th>
+      </tr>
+      <tr>
+        <th class="valTabela">
+          > 94.0 cm
+        </th>
+        <th class="valTabela">
+          Para Homens
+        </th>
+      </tr>
+    </table>
+
+    <p>Parâmetros de circunferência abdominal que estão relacionados
+      com o risco de morbilidade</p>
+  </div>
+</body>
+
+</html>
