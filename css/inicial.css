@@ -27,11 +27,13 @@ header {
         justify-content: space-evenly;
         padding: 0;
         list-style: none;
+        font-size: 1.3rem;
     }
 
     ul>li {
         display: inline-block;
         padding: 10px 5px;
+       
 
         a:hover {
             text-decoration: underline;
@@ -80,7 +82,7 @@ main {
         }
 
         h1 {
-            color: rgb(255, 255, 255);
+            color: rgb(237, 181, 120);
             font-size: 4.75vw;
             text-shadow: 1px 1px 2px black;
             text-align: center;

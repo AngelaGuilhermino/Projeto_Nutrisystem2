@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Jaldi:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaldi:wght@400;700&family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=Palanquin+Dark:wght@400;500;600;700&display=swap');
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #CE0544;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    font-family: "inter", Arial, Helvetica, sans-serif;
+    min-height: 13.4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+        font-family: "italianno", cursive;
+        color: #FFF;
+        font-size: 6em;
+        text-align: center;
+        display: block;
+    }
+
+    .menu-res {
+        width: 10px;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+
+img {
+    width: 28.75rem;
+    height: 50rem;
+    margin-right: 3rem;
+    align-self: flex-start;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+
+}
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    align-items: center;
+    width: 30rem;
+    padding: 2rem auto;
+    margin: 0 2rem auto;
+    background-color: #FFF;
+    box-shadow: 0px 8px 10px  rgb(253, 127, 1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-family: 'DM Sans';
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+h2 {
+    color: #CE0544;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(255, 136, 0, 0.7);
+}
+
+a {
+    color: #CE0544;
+    text-decoration-line: none;
+}
+
+.esqueceuSenha {
+    margin-right: 3.7rem;
+    align-self: flex-end;
+}
+
+.signup {
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+
+input {
+    width: 70%;
+    height: 1.4rem;
+    margin: 0.6rem 0;
+    padding: 8px;
+}
+
+input:focus {
+    border: 2px solid #d84070;
+}
+
+button {
+    margin-top: 2rem;
+    padding: 8px;
+    width: 9rem;
+    height: 2.3rem;
+    border-radius: 30px;
+    border: none;
+    background-color: #CE0544;
+    color: #FFF;
+    font-weight: bold;
+}
