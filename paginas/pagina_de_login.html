@@ -18,20 +18,20 @@
     </header>
     <div class="container">
         <div class="telalogin">
-            <form>
+            <form id="form-login">
                 <div class="titulo">
                     LOGIN
                 </div>
                 <div>
                     <label>E-mail: </label> <br>
-                    <input type="email" name="email">
+                    <input type="email" name="email" id="email-login">
                 </div>
                 <div>
                     <label>Senha: </label> <br>
-                    <input type="password" name="senha">
+                    <input type="password" name="senha" id="senha-login">
                 </div>
                 <div>
-                    <a href="pagina_principal_logado.html"><input type="button" value="Enviar" name="enviar"></a>
+                    <button>Enviar</button>
                 </div>
                 <div>
                     <a href="recuperar_senha.html"><span>Esqueceu a senha?</span></a>
@@ -42,6 +42,8 @@
             </form>
         </div>
     </div>
+
+    <script src="../script/login.js"></script>
 </body>
 
 </html>

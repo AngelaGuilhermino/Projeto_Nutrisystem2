@@ -2,6 +2,7 @@ const form = document.getElementById('form');
 const campos = document.querySelectorAll('.validacao');
 const spans = document.querySelectorAll('.mensagem');
 const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+let cadastrou = false;
 
 // Campos:
 // [0] Email
@@ -25,8 +26,10 @@ form.addEventListener('submit', (event) => {
 
     // Se todas as validações passarem, o formulário pode ser enviado
     if (isEmailValid && isSenhaValid && isTamanhoValid && isCamposValid) {
-        form.submit();
-        window.location.href = 'pagina_de_login.html';
+        cadastrar();
+        if(cadastrou){
+            window.location.href = 'pagina_de_login.html';
+        }
     }
 });
 
@@ -78,4 +81,30 @@ function validaCampos(index) {
         removeErro(index);
         return true;
     }
+}
+
+function cadastrar() {
+    var login = document.getElementById("login").value;
+    var email = document.getElementById("email").value;
+    var senha = document.getElementById("senha").value;
+
+    let usuarios = new Array();
+
+    if(localStorage.meusUsuarios){
+        usuarios = JSON.parse(localStorage.getItem("meusUsuarios"));
+
+        let usuarioExistente = usuarios.some(user => user.login === login || user.email === email);
+        if (usuarioExistente) {
+        alert("Usuário ou e-mail já cadastrado!");
+        return;
+        }
+    }
+
+    usuarios.push({login, email, senha});
+    login = document.getElementById("login").value = "";
+    email = document.getElementById("email").value = "";
+    senha = document.getElementById("senha").value = "";
+    localStorage.setItem("meusUsuarios", JSON.stringify(usuarios));
+
+    cadastrou = true;
 }

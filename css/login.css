@@ -123,7 +123,8 @@ input{
     80% {color: yellowgreen;}
 }
 
-input[type=button]{
+button{
+    width: 100%;
     font-size: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
