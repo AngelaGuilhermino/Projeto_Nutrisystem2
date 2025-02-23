@@ -62,7 +62,7 @@
                             <div class="parte">
                                 <div>
                                     <label class="textForm">Data de nascimento:</label>
-                                    <input type="date" name="data" class="validacaoCad validacao">
+                                    <input type="date" name="data" id="data" class="validacaoCad validacao">
                                     <div>
                                         <span class="mensagem">Campos Obrigatório</span>
                                     </div>
@@ -87,12 +87,12 @@
                                 <div class="peso_altura">
                                     <div class="textForm">
                                         <label for="peso" class="textForm">Peso:</label>
-                                        <input type="number" name="Peso" min="0" placeholder="EX: 70" class="validacaoCad validacao"
+                                        <input type="number" name="Peso" min="0" placeholder="EX: 70" id="peso" class="validacaoCad validacao"
                                             oninput="validaCampos()">
                                         <span class="mensagem">Campos Obrigatório</span>
                                     </div>
                                     <div class="textForm">
-                                        <label for="altura" class="textForm">Altura:</label>
+                                        <label for="altura" class="textForm" id="altura">Altura:</label>
                                         <input type="number" name="altura id=" altura" min="0" step="0.01"
                                             placeholder="EX:1.70" class="validacaoCad validacao" oninput="validaCampos()">
                                         <span class="mensagem">Campos Obrigatório</span>

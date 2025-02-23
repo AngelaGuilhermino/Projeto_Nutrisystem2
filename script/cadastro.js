@@ -87,6 +87,10 @@ function cadastrar() {
     var login = document.getElementById("login").value;
     var email = document.getElementById("email").value;
     var senha = document.getElementById("senha").value;
+    var telefone = document.getElementById("tel").value;
+    var peso = document.getElementById("peso").value;
+    var altura = document.getElementById("altura").value;
+    var idade = calcularIdade();
 
     let usuarios = new Array();
 
@@ -100,11 +104,29 @@ function cadastrar() {
         }
     }
 
-    usuarios.push({login, email, senha});
+    usuarios.push({login, email, senha, telefone, peso, altura, idade});
     login = document.getElementById("login").value = "";
     email = document.getElementById("email").value = "";
     senha = document.getElementById("senha").value = "";
     localStorage.setItem("meusUsuarios", JSON.stringify(usuarios));
 
     cadastrou = true;
+}
+
+
+function calcularIdade() {
+    const dataNascimento = document.getElementById("data").value;
+    const hoje = new Date();
+    const nascimento = new Date(dataNascimento);
+
+    let idade = hoje.getFullYear() - nascimento.getFullYear();
+    const mes = hoje.getMonth() - nascimento.getMonth();
+    const dia = hoje.getDate() - nascimento.getDate();
+
+    // Ajusta a idade se o aniversário ainda não aconteceu neste ano
+    if (mes < 0 || (mes === 0 && dia < 0)) {
+        idade--;
+    }
+
+    return idade;
 }
