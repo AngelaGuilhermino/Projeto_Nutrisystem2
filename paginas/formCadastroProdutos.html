@@ -14,7 +14,7 @@
 
 <body>
     <div class="container">
-        <img src="../img/login_frunt.png" alt="">
+        <img src="../img/login_frunt.png" alt="" class="imgFruta">
         <div class="formContainer">
             <header>
                 <nav>
@@ -24,7 +24,7 @@
             <main>
                 <form id="form" style="width: 45rem;">
                     <div style="align-items: center;">
-                        <h2>Cadastro de Usuário</h2>
+                        <h2>Cadastro de Consulta</h2>
                     </div>
                     <div style="width: 90%;">
                         <section class="divisoria">
@@ -61,19 +61,10 @@
                             </div>
                             <div class="parte">
                                 <div>
-                                    <label class="textForm">Data de nascimento:</label>
-                                    <input type="date" name="data" class="validacaoCad">
+                                    <label class="textForm">Descrição:</label>
+                                    <textarea id="descricao" name="descricao" rows="4" cols="50" placeholder="Digite sua descrição aqui..."></textarea>
                                     <div>
                                         <span class="mensagem">Campos Obrigatório</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <label class="textForm"> Sexo:</label>
-                                    <div class="sexo">
-                                        <input type="radio" name="sexo" id="M" value="Masculino">
-                                        <label class="textForm" style="font-size: 1.1rem;" for="M">Masculino</label>
-                                        <input type="radio" name="sexo" id="F">
-                                        <label class="textForm" style="font-size: 1.1rem;" for="F">Feminino</label>
                                     </div>
                                 </div>
                                 <div class="tel" class="textForm">
@@ -103,17 +94,17 @@
                     </div>
                         <section>
                             <label class="labelSelect">
-                                O que você tem interesse em ver no Nutri System?
+                                O que/quem você quer consultar no Nutri System?
                             </label>
                             <select class="selectConf" name="interesses" id="interesse">
                                 <option selected value=""> Selecione</option>
-                                <option value="desafios"> Desafios</option>
-                                <option value="receitas"> Receitas</option>
-                                <option value="imc"> IMC</option>
-                                <option value="dietas"> Registras minhas dietas</option>
-                                <option value="treinos"> Registrar meus treinos</option>
-                                <option value="calorias"> Caloria dos alimentos</option>
-                                <option value="treino"> Treinos</option>
+                                <option value="personal"> Personal Trainer</option>
+                                <option value="nutricionista"> Nutricionista</option>
+                                <option value="ed.fisico">Educador físico</option>
+                                <option value="fisioterapeuta">Fisioterapeuta</option>
+                                <option value="cardiologista">Cardiologista</option>
+                                <option value="academia">Academia</option>
+                                <option value="nutrisystem">Técnicos do NutriSystem</option>
                             </select>
                         </section>
                         <div class="caixa_botao">
