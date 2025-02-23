@@ -6,8 +6,7 @@ function trocada(){
     const isSenhaValid = validaSenha();
     const isTamanhoValid = validaTamanho();
     if (isSenhaValid && isTamanhoValid) {
-        window.alert("Senha trocada com sucesso");
-        window.location.href = 'pagina_de_login.html';
+        trocarsenha();
     }
 }
 
@@ -38,5 +37,23 @@ function validaSenha() {
     } else {
         erro(1);
         return false;
+    }
+}
+
+function trocarsenha() {
+    var senha = document.getElementById("senha-nova").value;
+    var email = JSON.parse(localStorage.getItem("emailRecuperar"));
+    if(localStorage.meusUsuarios){
+        usuarios = JSON.parse(localStorage.getItem("meusUsuarios"));
+        let verificaEmail = usuarios.find(user => user.email === email);
+        if (!verificaEmail) {
+        alert("email não cadastrado!");
+        return;
+        } else {
+            verificaEmail.senha = senha; 
+            localStorage.setItem("meusUsuarios", JSON.stringify(usuarios));
+            window.alert("Senha trocada com sucesso");
+            window.location.href = 'pagina_de_login.html';
+        }
     }
 }

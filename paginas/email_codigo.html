@@ -19,7 +19,7 @@
     </header>
     <div class="container"> 
        <div class = "tela-codigo"> 
-        <form>
+        <form id="form">
             <div class="titulo">
                 Enviamos um código para seu email
             </div>
@@ -28,12 +28,17 @@
                 Insira seu Código aqui.
             </div>
             <div>
-                <input type="number" name="number">
-                <button><a href="troca_Senha.html">Enviar</a></button>
+                <input type="number" name="number" id="num">
+                <button>Enviar</button>
             </div>
+        </form>
+        <div>
+            <button onclick="codigo()">Reeviar Código</button>
         </div>
     </div>
-    </form>
+</div>
+    
+    <script src="../script/codigo.js"></script>
 </body>
 
 </html>

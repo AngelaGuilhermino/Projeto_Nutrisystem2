@@ -6,13 +6,9 @@ const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
-
     const isEmailValid = validaEmail();
-
-    // Se todas as validações passarem, o formulário pode ser enviado
     if (isEmailValid) {
-        form.submit();
-        window.location.href = 'email_codigo.html';
+        emailrecuperar();
     }
 });
 
@@ -33,5 +29,31 @@ function validaEmail() {
     } else {
         erro(0);
         return false;
+    }
+}
+
+function emailrecuperar() {
+    var email = document.getElementById("email-recuperar").value;
+
+    if(localStorage.meusUsuarios){
+        usuarios = JSON.parse(localStorage.getItem("meusUsuarios"));
+
+        let verificaEmail = usuarios.find(user => user.email === email);
+        if (!verificaEmail) {
+        alert("email não cadastrado!");
+        return;
+        } else{
+            localStorage.setItem("emailRecuperar", JSON.stringify(verificaEmail.email));
+
+            function gerarNumero4Digitos() {
+                return Math.floor(Math.random() * 9000) + 1000;
+            }
+
+            let numeroAleatorio = gerarNumero4Digitos();
+            localStorage.setItem("numeroAleatorio", numeroAleatorio);
+            console.log("Número gerado e salvo:", numeroAleatorio);
+
+            window.location.href = 'email_codigo.html';
+        }
     }
 }
