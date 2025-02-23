@@ -1,48 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Login - Nutri System</title>
+    <title>Login - NutriSystem</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
-    <link rel='stylesheet' type='text/css' media='screen' href='../css/login.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/forms.css'>
     <script src='main.js'></script>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <a class="logo" href="../pagina_inicial.html">Nutri System</a>
-        </nav>
-    </header>
     <div class="container">
-        <div class="telalogin">
+        <img src="../img/login_frunt.png" alt="">
+        <div class="formContainer">
+            <header>
+                <nav>
+                    <a class="logo" href="../pagina_inicial.html">Nutri System</a>
+                </nav>
+            </header>
             <form id="form-login">
-                <div class="titulo">
-                    LOGIN
-                </div>
+                <h2>Login</h2>
+
+                <label class="textForm">Email </label>
+                <input type="email" class="validacao"  name="email" id="email-login">
+
+                <label class="textForm">Senha</label>
+                <input type="password" class="validacao" name="senha" id="senha-login">
                 <div>
-                    <label>E-mail: </label> <br>
-                    <input type="email" name="email" id="email-login">
+                    <a href="recuperar_senha.html"><span>Esqueceu sua senha?</span></a>
                 </div>
-                <div>
-                    <label>Senha: </label> <br>
-                    <input type="password" name="senha" id="senha-login">
-                </div>
-                <div>
-                    <button>Enviar</button>
-                </div>
-                <div>
-                    <a href="recuperar_senha.html"><span>Esqueceu a senha?</span></a>
-                </div>
-                <div>
-                    <span>Não tem uma conta? Faça seu cadastro <a href="pagina_de_cadastro.html">aqui.</a></span>
-                </div>
+                
+                <button type="submit">Entrar</button>
+                <a href="pagina_de_cadastro.html" class="signup">Ainda não possui uma conta? Cadastre-se aqui.</a>
             </form>
         </div>
     </div>
-
     <script src="../script/login.js"></script>
 </body>
 

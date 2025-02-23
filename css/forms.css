@@ -4,7 +4,6 @@
 
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
     background-color: #CE0544;
     align-items: center;
     display: flex;
@@ -70,9 +69,9 @@ form {
     flex-direction: column;
 }
 
-label {
+.textForm {
     font-family: 'DM Sans';
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 500;
 }
 
@@ -100,15 +99,15 @@ a {
 }
 
 
-input {
+.validacao {
     width: 70%;
     height: 1.4rem;
     margin: 0.6rem 0;
     padding: 8px;
 }
 
-input:focus {
-    border: 2px solid #d84070;
+.validacao:focus {
+    border: 2px solid #faa509;
 }
 
 button {
@@ -121,4 +120,46 @@ button {
     background-color: #CE0544;
     color: #FFF;
     font-weight: bold;
+    cursor: pointer;
+    animation-name: anibutton;
+    animation-duration: 4s;
+}
+
+button:hover {
+    background-color: #fa9209;
+}
+
+@keyframes anilabel{
+    0% {color: rgb(241, 236, 238);}
+    80% {color: rgb(255, 157, 0);}
+    40% {color: rgb(255, 33, 89);}
+}
+
+
+@media (min-width: 2000px) {
+    input[type=button]{
+        font-size: 2em;
+    }
+}
+
+@keyframes anibutton{
+    0% {color: rgba(207, 9, 75, 0.734);}
+    40% {color: rgb(23, 94, 2);}
+    80% {color: rgb(248, 149, 9);}
+    
+}
+
+
+table {
+    width: 50%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+table tr:nth-child(odd) {
+    background-color: lightblue;
+}
+
+table tr:nth-child(even) {
+    background-color: white;
 }

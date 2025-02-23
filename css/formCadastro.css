@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italianno&family=Jost:ital,wght@0,100..900;1,100..900&family=Passion+One:wght@400;700;900&family=Press+Start+2P&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Jaldi:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaldi:wght@400;700&family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=Palanquin+Dark:wght@400;500;600;700&display=swap');
+
+
+.divisoria{
+    display: grid;
+    grid-template-columns: 45% 35%;
+    align-items: center;
+    justify-content: center;
+}
+
+.divisoria > div > div > *{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.divisoria div{
+    margin: 5px 0px;
+}
+
+
+@media screen and (max-width: 880px) {
+
+    .telalogin{
+        width: 60vw;
+    }
+
+    .divisoria{
+      display: block;
+    }
+
+    input{
+        width: 90%;
+    }
+
+    select{
+        width: 90%;
+    }
+  }
+
+  @media screen and (min-width: 2000px) {
+    main{
+        *{
+            font-size: 1.1em;
+        }
+    }
+  }
+
+.validacaoCad {
+    width: 80%;
+    height: 1.5rem;
+    margin: 2rem;
+}
+
+section{
+    margin: 10px 0px;
+}
+
+section > label{
+    display: block;
+}
+
+.tel>label, .tel>input{
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+label{
+    padding-bottom: 20px;
+}
+
+.sexo{
+    display: flex;
+    justify-content: space-around;
+    
+    input{
+        width: auto;
+    }
+}
+
+.textForm {
+    font-family: 'DM Sans';
+    font-size: 1.1rem;
+    font-weight: 500;
+    animation-name: anilabel;
+    animation-duration: 10s;
+}
+
+.peso_altura{
+display: flex;
+flex-direction: column;
+
+    input{
+        width: 5rem;
+        height: 1rem;
+        margin: 5.5px;
+    }
+
+    
+}
+
+.labelSelect {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.selectConf {
+    width: 95%;
+    height: 2rem;
+}
+
+.text{
+    margin: 0px 0px 0px 15px;
+}
+
+.caixa_botao{
+    
+    margin: 20px auto;
+}
+
+.botao{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    padding: 8px;
+    width: 7rem;
+    height: 2.3rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #CE0544;
+    color: #FFF;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.botao:hover {
+    background-color: #ff7300;
+}
+
+.mensagem{
+    color: #e63636;
+    margin: 3px 0px 0px 1px;
+    display: none;
+}
+
