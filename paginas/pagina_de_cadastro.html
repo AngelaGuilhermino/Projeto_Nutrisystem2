@@ -36,7 +36,7 @@
                                 </div>
                                 <div>
                                     <label class="textForm">E-mail:</label>
-                                    <input type="email" name="email" class="validacaoCad" placeholder="Dígite seu email"
+                                    <input type="email" name="email" class="validacaoCad validacao" placeholder="Dígite seu email"
                                         oninput="validaEmail()" id="email">
                                     <div>
                                         <span class="mensagem">Coloque um email válido</span>
@@ -44,7 +44,7 @@
                                 </div>
                                 <div>
                                     <label class="textForm">Senha:</label>
-                                    <input type="password" name="senha" class="validacaoCad" placeholder="Dígite sua senha"
+                                    <input type="password" name="senha" class="validacaoCad validacao" placeholder="Dígite sua senha"
                                         oninput="validaTamanho()" id="senha">
                                     <div>
                                         <span class="mensagem">A senha deve ter no mínimo 8 dígitos</span>
@@ -52,7 +52,7 @@
                                 </div>
                                 <div>
                                     <label class="textForm">Confirmar senha:</label>
-                                    <input type="password" name="senha" class="validacaoCad"
+                                    <input type="password" name="senha" class="validacaoCad validacao"
                                         placeholder="Confirme sua senha" oninput="validaSenha()">
                                     <div>
                                         <span class="mensagem">Senhas devem ser conpatíveis</span>
@@ -62,7 +62,7 @@
                             <div class="parte">
                                 <div>
                                     <label class="textForm">Data de nascimento:</label>
-                                    <input type="date" name="data" class="validacaoCad">
+                                    <input type="date" name="data" class="validacaoCad validacao">
                                     <div>
                                         <span class="mensagem">Campos Obrigatório</span>
                                     </div>
@@ -79,7 +79,7 @@
                                 <div class="tel" class="textForm">
                                     <label class="textForm">Número de telefone:</label>
                                     <input type="number" name="numero" id="tel" placeholder="DD 000000000"
-                                        class="validacaoCad" oninput="validaNumero()">
+                                        class="validacaoCad validacao" oninput="validaNumero()">
                                     <div>
                                         <span class="mensagem">Campos Obrigatório</span>
                                     </div>
@@ -87,14 +87,14 @@
                                 <div class="peso_altura">
                                     <div class="textForm">
                                         <label for="peso" class="textForm">Peso:</label>
-                                        <input type="number" name="Peso" min="0" placeholder="EX: 70" class="validacaoCad"
+                                        <input type="number" name="Peso" min="0" placeholder="EX: 70" class="validacaoCad validacao"
                                             oninput="validaCampos()">
                                         <span class="mensagem">Campos Obrigatório</span>
                                     </div>
                                     <div class="textForm">
                                         <label for="altura" class="textForm">Altura:</label>
                                         <input type="number" name="altura id=" altura" min="0" step="0.01"
-                                            placeholder="EX:1.70" class="validacaoCad" oninput="validaCampos()">
+                                            placeholder="EX:1.70" class="validacaoCad validacao" oninput="validaCampos()">
                                         <span class="mensagem">Campos Obrigatório</span>
                                     </div>
                                 </div>
