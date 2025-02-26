@@ -5,9 +5,10 @@
 
 .divisoria{
     display: grid;
-    grid-template-columns: 45% 35%;
+    grid-template-columns: 55% 35%;
     align-items: center;
     justify-content: center;
+    
 }
 
 .divisoria > div > div > *{
