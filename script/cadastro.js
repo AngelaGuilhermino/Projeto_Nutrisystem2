@@ -93,6 +93,7 @@ function cadastrar() {
     var altura = document.getElementById("altura").value;
     var data_Nascimento = document.getElementById("data").value;
     var idade = calcularIdade();
+    var logado = false;
 
     let usuarios = new Array();
 
@@ -106,7 +107,7 @@ function cadastrar() {
         }
     }
 
-    usuarios.push({login, email, senha, telefone, sexo, peso, altura, idade, data_Nascimento});
+    usuarios.push({login, email, senha, telefone, sexo, peso, altura, idade, data_Nascimento, logado});
     login = document.getElementById("login").value = "";
     email = document.getElementById("email").value = "";
     senha = document.getElementById("senha").value = "";
