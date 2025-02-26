@@ -52,7 +52,7 @@ table {
 /* Tabela 1 */
 
 .titleTh {
-    background-color: #CE0544;
+    background-color: #FC8805;
     padding: 1rem;
     color: #FFF;
 }
@@ -62,15 +62,6 @@ table {
     font-weight: normal;
 }
 
-.LineTable1:nth-child(odd){
-    background-color: #f4b1c6;
-    color: #CE0544;
-}
-
-.LineTable1:nth-child(even){
-    background-color: #f4b1c6;
-    color: #CE0544;
-}
 
 /* Tabela 2*/
 
