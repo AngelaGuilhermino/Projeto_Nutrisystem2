@@ -62,13 +62,13 @@ table {
     font-weight: normal;
 }
 
-.colorLine1 {
+.LineTable1:nth-child(odd){
     background-color: #f4b1c6;
     color: #CE0544;
 }
 
-.colorLine2 {
-    background-color: #f8c8d7;
+.LineTable1:nth-child(even){
+    background-color: #f4b1c6;
     color: #CE0544;
 }
 
@@ -85,12 +85,12 @@ table {
     font-weight: normal;
 }
 
-.colorLine3 {
+tr:nth-child(odd){
     background-color: #efb068;
     color: #6b3a02;
 }
 
-.colorLine4 {
+tr:nth-child(even){
     background-color: #FFCB91;
     color: #6b3a02;
 }

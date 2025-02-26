@@ -22,7 +22,7 @@
                 </nav>
             </header>
             <main>
-                <form id="form" style="width: 45rem;">
+                <form id="form-consulta" style="width: 45rem;">
                     <div style="align-items: center;">
                         <h2>Cadastro de Consulta</h2>
                     </div>
@@ -32,12 +32,11 @@
                                 <div>
                                     <label class="textForm"> Nome completo:</label>
                                     <input type="text" class="validacaoCad" name="nome" placeholder="Dígite seu nome"
-                                        id="login">
+                                        id="login" required>
                                 </div>
                                 <div>
                                     <label class="textForm">E-mail:</label>
-                                    <input type="email" name="email" class="validacaoCad" placeholder="Dígite seu email"
-                                        oninput="validaEmail()" id="email">
+                                    <input type="email" name="email" class="validacaoCad" placeholder="Dígite seu email" id="email-consulta">
                                     <div>
                                         <span class="mensagem">Coloque um email válido</span>
                                     </div>
@@ -45,18 +44,11 @@
                                 <div>
                                     <label class="textForm">Senha:</label>
                                     <input type="password" name="senha" class="validacaoCad" placeholder="Dígite sua senha"
-                                        oninput="validaTamanho()" id="senha">
-                                    <div>
-                                        <span class="mensagem">A senha deve ter no mínimo 8 dígitos</span>
-                                    </div>
+                                         id="senha-consulta">
                                 </div>
                                 <div>
-                                    <label class="textForm">Confirmar senha:</label>
-                                    <input type="password" name="senha" class="validacaoCad"
-                                        placeholder="Confirme sua senha" oninput="validaSenha()">
-                                    <div>
-                                        <span class="mensagem">Senhas devem ser conpatíveis</span>
-                                    </div>
+                                    <label class="textForm">Data da Consulta</label>
+                                    <input type="date" name="consulta-data" id="consulta-data" required min="26-02-2025">
                                 </div>
                             </div>
                             <div class="parte">
@@ -69,8 +61,8 @@
                                 </div>
                                 <div class="tel" class="textForm">
                                     <label class="textForm">Número de telefone:</label>
-                                    <input type="number" name="numero" id="tel" placeholder="DD 000000000"
-                                        class="validacaoCad" oninput="validaNumero()">
+                                    <input type="number" name="numero" id="tel-consulta" placeholder="DD 000000000"
+                                        class="validacaoCad" required>
                                     <div>
                                         <span class="mensagem">Campos Obrigatório</span>
                                     </div>
@@ -79,13 +71,13 @@
                                     <div class="textForm">
                                         <label for="peso" class="textForm">Peso:</label>
                                         <input type="number" name="Peso" min="0" placeholder="EX: 70" class="validacaoCad"
-                                            oninput="validaCampos()">
+                                            >
                                         <span class="mensagem">Campos Obrigatório</span>
                                     </div>
                                     <div class="textForm">
                                         <label for="altura" class="textForm">Altura:</label>
                                         <input type="number" name="altura id=" altura" min="0" step="0.01"
-                                            placeholder="EX:1.70" class="validacaoCad" oninput="validaCampos()">
+                                            placeholder="EX:1.70" class="validacaoCad">
                                         <span class="mensagem">Campos Obrigatório</span>
                                     </div>
                                 </div>
@@ -96,7 +88,7 @@
                             <label class="labelSelect">
                                 O que/quem você quer consultar no Nutri System?
                             </label>
-                            <select class="selectConf" name="interesses" id="interesse">
+                            <select class="selectConf" name="interesses" id="interesse" required>
                                 <option selected value=""> Selecione</option>
                                 <option value="personal"> Personal Trainer</option>
                                 <option value="nutricionista"> Nutricionista</option>
@@ -115,7 +107,7 @@
                 </form>
             </main>
 
-            <script src="../script/cadastro.js"></script>
+            <script src="../script/consulta.js"></script>
         </div>
     </div>
 </body>

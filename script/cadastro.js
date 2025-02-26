@@ -54,7 +54,7 @@ function validaEmail() {
 }
 
 function validaTamanho() {
-    if (campos[1].value.length < 9) {
+    if (campos[1].value.length < 8) {
         erro(1);
         return false;
     } else {
@@ -88,8 +88,10 @@ function cadastrar() {
     var email = document.getElementById("email").value;
     var senha = document.getElementById("senha").value;
     var telefone = document.getElementById("tel").value;
+    var sexo = document.querySelector('input[name="sexo"]:checked').value;
     var peso = document.getElementById("peso").value;
     var altura = document.getElementById("altura").value;
+    var data_Nascimento = document.getElementById("data").value;
     var idade = calcularIdade();
 
     let usuarios = new Array();
@@ -104,7 +106,7 @@ function cadastrar() {
         }
     }
 
-    usuarios.push({login, email, senha, telefone, peso, altura, idade});
+    usuarios.push({login, email, senha, telefone, sexo, peso, altura, idade, data_Nascimento});
     login = document.getElementById("login").value = "";
     email = document.getElementById("email").value = "";
     senha = document.getElementById("senha").value = "";
