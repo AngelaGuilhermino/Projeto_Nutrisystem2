@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jaldi:wght@400;700&family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=Palanquin+Dark:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italianno&family=Jaldi:wght@400;700&display=swap');
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #faeded;
+}
+
+a {
+   text-decoration: none;
+   color: #FFF;
+}
+
+.apresent {
+    background-color: #184524;
+    margin: 0 auto;
+    padding: 2rem;
+    color: #FFF;
+    font-family: 'DM Sans';
+    font-weight: 800;
+    font-size: 2rem;
+    
+}
+
+
+.tableUsuario p,
+.tableProduto p {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    font-family: 'jost';
+}
+
+
+.tableUsuario,
+.tableProduto {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 5rem 5rem 5rem;
+}
+
+table {
+    width: 85%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+
+/* Tabela 1 */
+
+.titleTh {
+    background-color: #CE0544;
+    padding: 1rem;
+    color: #FFF;
+}
+
+.LineTable1 {
+    padding: 1rem;
+    font-weight: normal;
+}
+
+.colorLine1 {
+    background-color: #f4b1c6;
+    color: #CE0544;
+}
+
+.colorLine2 {
+    background-color: #f8c8d7;
+    color: #CE0544;
+}
+
+/* Tabela 2*/
+
+.titleTh2 {
+    background-color: #FC8805;
+    padding: 1rem;
+    color: #FFF;
+}
+
+.LineTable2 {
+    padding: 1rem;
+    font-weight: normal;
+}
+
+.colorLine3 {
+    background-color: #efb068;
+    color: #6b3a02;
+}
+
+.colorLine4 {
+    background-color: #FFCB91;
+    color: #6b3a02;
+}
+
+/* Responsividade */
+
+@media (max-width: 1023px) and (min-width: 768px) {
+
+    table {
+        width: 75%;
+    }
+
+    .tableUsuario,
+    .tableProduto {
+        margin: 1rem 10rem 5rem 10rem;
+        right: 7rem;
+    }
+
+}
+
+@media (max-width: 400px) {
+    table {
+        width: 55%;
+     
+    }
+
+    .tableUsuario,
+    .tableProduto {
+        margin: 1rem 10rem 5rem 10rem;
+        right: 7rem;
+    }
+}
